@@ -31,7 +31,7 @@ end
 
 
 def full?(board)
-  if board.all { |item | item == "X" || item == "O"}
+  if board.all? { |item | item == "X" || item == "O"}
     return true 
   end
   return false

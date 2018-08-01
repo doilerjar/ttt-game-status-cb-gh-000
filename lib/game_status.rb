@@ -58,5 +58,5 @@ def winner(board)
   if won?(board)
     won?(board).each {|index| return board[index]}
   end
-  return false
+  return nil
 end 

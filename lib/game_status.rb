@@ -24,5 +24,7 @@ def won?(board)
       return win_combo
     end 
   end
+  
+  # Reached here => no winning combination detected
   return false
 end

@@ -28,3 +28,10 @@ def won?(board)
   # Reached here => no winning combination detected
   return false
 end
+
+
+def full?(board)
+  if board.all? { |item| item == "X" || item == "O" }
+    return true 
+  return false 
+end

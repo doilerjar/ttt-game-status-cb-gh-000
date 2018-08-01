@@ -31,7 +31,7 @@ end
 
 
 def full?(board)
-  if board.all? { |item| item == "X" || item == "O" }
+  if board.select { |item| item == " " || item == "" || item == nil }
     return true 
   return false 
 end

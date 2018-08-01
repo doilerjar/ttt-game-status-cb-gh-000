@@ -15,14 +15,14 @@ WIN_COMBINATIONS = [
     [2,4,6]
   ]
   
-  def won?(board)
-    WIN_COMBINATIONS.each do |win_combo|
-      if win_combo.all? {|index| board[index] == "X"}
-        return win_combo
-      end
-      if win_combo.all? {|index| board[index] == "O"}
-        return win_combo
-      end 
+def won?(board)
+  WIN_COMBINATIONS.each do |win_combo|
+    if win_combo.all? {|index| board[index] == "X"}
+      return win_combo
     end
-    return nil
-  end 
+    if win_combo.all? {|index| board[index] == "O"}
+      return win_combo
+    end 
+  end
+  return nil
+end
